@@ -7,14 +7,18 @@
 
 
 Mina uurisin sales tabelit, kuna algselt planeeritud stores tabel andmebaasis puudus. 
-Leidsid, et kuigi eraldi kaupluste tabelit ei olnud, sain müügiandmete põhjal tuvastada 3 füüsilist asukohta: Tallinn, Tartu ja Pärnu. Märkasin, et online-müükide puhul on asukoha veerg tühi (NULL), mis on oluline eristus.
-See tähendab UrbanStyle’ile, et meil on küll olemas info müügikohtade kohta, kuid poodide täpsemaks analüüsiks (nt töötajate arv või pindala) on meil vaja luua eraldi keskne kaupluste register.
-
-    - Saime vastuse küsimusele millised kauplused on ja mis andmed nende kohta on?
-    - Kaupluse asukoht | Tehingute_arv |Kogukäive
+- **sales** (kanalid/asukohad):
+- **products**: 15234 rida, 11 veerg
+  - *peamine leid* : 
+    - stores tabel puudus andmestikus 
+    - millised kauplused on ja mis andmed nende kohta
+        - Kaupluse asukoht | Tehingute_arv |Kogukäive
         - Pärnu            | 1618          | 438 183.08 €
         - Tartu            | 2708          | 783 468.61 €
-        - Tallinn          | 5704          | 1 626 303.81 E
+        - Tallinn          | 5704          | 1 626 303.81 €
+    - Tallinn moodustab ligikaudu 57% kogukäibest ja tehingute arvust, mis on loogiline arvestades rahvaarvu ja turu suurust.
+    - Eraldi kaupluste tabelit ei olnud, müügiandmete põhjal sai tuvastada 3 füüsilist kauplust: Tallinn, Tartu ja Pärnu.
+    - Online müüke on kokku 5 204
 
 
 
