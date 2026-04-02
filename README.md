@@ -18,8 +18,12 @@ See tähendab UrbanStyle’ile, et meil on küll olemas info müügikohtade koht
 
 
 
-# Mis oli suurim üllatus? Suurim üllatus oligi see, et puudus stores tabel, mille andmeid analüüsida.
-# Milline on meie soovitus Toomasele? Andmete korrastamine: Toomas peab esimesel võimalusel looma stores tabeli, kus on kirjas poodide aadressid, pindalad ja töötajate arv. See võimaldaks Toomasel arvutada müüki ruutmeetri kohta või tulu ühe töötaja kohta, mis on äri laiendamiseks hädavajalik info.
-# Milliseid andmeid meil puudus? Meil puudus stores andmetega tabel.
 
+SUURIM ÜLLATUS : Suurim üllatus oligi see, et puudus stores tabel, mille andmeid analüüsida.
+[1-2 lauset]
 
+SOOVITUS TOOMASELE : Andmete korrastamine: Toomas peab esimesel võimalusel looma stores tabeli, kus on kirjas poodide aadressid, pindalad ja töötajate arv. See võimaldaks Toomasel arvutada müüki ruutmeetri kohta või tulu ühe töötaja kohta, mis on äri laiendamiseks hädavajalik info
+[1-2 lauset]
+
+PUUDUVAD ANDMED : Meil puudus stores andmetega tabel.
+[1-2 lauset]
