@@ -1,36 +1,4 @@
-```sql
--- Leia kõik unikaalsed kaupluste asukohad
-SELECT DISTINCT store_location 
-FROM sales 
-WHERE store_location IS NOT NULL;
 
--- Mitu tehingut on igas linnas tehtud? 
-SELECT store_location, COUNT(*) AS tehingute_arv
-FROM sales
-WHERE store_location IS NOT NULL
-GROUP BY store_location
-ORDER BY tehingute_arv DESC;
-
--- Milline linn on toonud kõige rohkem tulu?
-SELECT store_location, SUM(total_price) AS kogukäive
-FROM sales
-WHERE store_location IS NOT NULL
-GROUP BY store_location
-ORDER BY kogukäive DESC;
-
--- Millised kauplused on ja mis andmed nende kohta on?
-SELECT 
-    store_location, 
-    COUNT(*) AS tehingute_arv, 
-    SUM(total_price) AS kogukäive
-FROM sales
-WHERE store_location IS NOT NULL
-GROUP BY store_location;
-
--- Millistes linnades kauplused asuvad?
-SELECT DISTINCT store_location 
-FROM sales 
-WHERE store_location IS NOT NULL;
 
 # [urbanstyle-TOOTE-grupp] -- UrbanStyle.ltd 
 
@@ -47,5 +15,4 @@ WHERE store_location IS NOT NULL;
 ## Milline on meie soovitus Toomasele? Andmete korrastamine: Toomas peab esimesel võimalusel looma stores tabeli, kus on kirjas poodide aadressid, pindalad ja töötajate arv. See võimaldaks Toomasel arvutada müüki ruutmeetri kohta või tulu ühe töötaja kohta, mis on äri laiendamiseks hädavajalik info.
 ## Milliseid andmeid meil puudus? Meil puudus stores andmetega tabel.
 
-## Meie eesmärk
-Uuendame hiljem.
+
